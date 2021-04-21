@@ -12,5 +12,3 @@ function dump (arr) {
 }
 
 module.exports = { dump };
-
-// console.log(dump([ 0, 0, 0, [ 1, 1, 1, 1 ] ]));
