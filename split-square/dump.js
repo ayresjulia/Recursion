@@ -1,4 +1,4 @@
-function dump (arr) {
+const dump = (arr) => {
 	let res = "";
 	if (typeof arr !== "object") return res + arr;
 	for (let n of arr) {
@@ -9,6 +9,6 @@ function dump (arr) {
 		}
 	}
 	return res;
-}
+};
 
 module.exports = { dump };
