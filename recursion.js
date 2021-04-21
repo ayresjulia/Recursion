@@ -23,14 +23,14 @@ function everyOther (str, i = 0, res = "") {
 
 /** isPalindrome: checks whether a string is a palindrome or not. */
 
-// function isPalindrome (str, i = 0) {
-// 	let leftIdx = i;
-// 	let rightIdx = str.length - 1;
-
-// 	if (str.length === 1) return true;
-// 	leftIdx === rightIdx ? true : false;
-// 	return isPalindrome(str, i + 1);
-// }
+function isPalindrome (str, i = 0) {
+	let leftIdx = i;
+	let rightIdx = str.length - i - 1;
+	if (str.length === 1) return true;
+	if (leftIdx >= rightIdx) return true;
+	if (str[leftIdx] !== str[rightIdx]) return false;
+	return isPalindrome(str, i + 1);
+}
 
 /** findIndex: return the index of val in arr (or -1 if val is not present). */
 
