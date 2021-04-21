@@ -15,13 +15,13 @@ function longest (words, i = 0, longestWord = 0) {
 
 /** everyOther: return a string with every other letter. */
 
-// function everyOther (str, i = 0, res = "") {
-// 	if (i >= str.length) return res;
-// 	res += str[i];
-// 	return everyOther(str, i + 2, res);
-// }
+function everyOther (str, i = 0, res = "") {
+	if (i >= str.length) return res;
+	res += str[i];
+	return everyOther(str, i + 2, res);
+}
 
-// /** isPalindrome: checks whether a string is a palindrome or not. */
+/** isPalindrome: checks whether a string is a palindrome or not. */
 
 // function isPalindrome (str, i = 0) {
 // 	let leftIdx = i;
